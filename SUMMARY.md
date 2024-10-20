@@ -2,16 +2,19 @@
 
 * [Welcome](README.md)
 
+## About
+
+* [Quickstart](about/quickstart.md)
+* [Introduction](about/introduction.md)
+* [Supported Wallets](about/supported-wallets.md)
+
 ## Getting Started
 
-* [Quickstart](getting-started/quickstart.md)
-* [Introduction](getting-started/introduction.md)
-
-## Basics
-
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [Prerequisites](getting-started/prerequisites.md)
+* [Installation](getting-started/installation.md)
+* [Implementation Guide](getting-started/implementation-guide/README.md)
+  * [How to Implement t:connect?](getting-started/implementation-guide/how-to-implement-t-connect.md)
+  * [How to Interact?](getting-started/implementation-guide/how-to-interact.md)
+* [Proof of Concept](getting-started/proof-of-concept/README.md)
+  * [How to Deploy](getting-started/proof-of-concept/how-to-deploy.md)
+  * [Sample App](getting-started/proof-of-concept/sample-app.md)

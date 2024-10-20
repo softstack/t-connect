@@ -1,0 +1,6 @@
+---
+icon: wallet
+---
+
+# Supported Wallets
+
