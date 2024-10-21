@@ -6,7 +6,7 @@
 
 * [Quickstart](about/quickstart.md)
 * [Introduction](about/introduction.md)
-* [Supported Wallets](about/supported-wallets.md)
+* [Wallets](about/wallets.md)
 
 ## Getting Started
 
@@ -18,3 +18,8 @@
 * [Proof of Concept](getting-started/proof-of-concept/README.md)
   * [How to Deploy](getting-started/proof-of-concept/how-to-deploy.md)
   * [Sample App](getting-started/proof-of-concept/sample-app.md)
+
+***
+
+* [Support](support.md)
+* [Changelog](changelog.md)

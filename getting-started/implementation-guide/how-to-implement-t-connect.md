@@ -4,20 +4,28 @@ icon: square-code
 
 # How to Implement t:connect?
 
+{% stepper %}
+{% step %}
 ### Initialize the SDK
 
 ```
 // Some code
 ```
+{% endstep %}
 
-### Configure Wallet Connections
+{% step %}
+### Configure the SDK
 
 ```
 // Some code
 ```
+{% endstep %}
 
+{% step %}
 ### Integrate into Telegram Mini App
 
 ```
 // Some code
 ```
+{% endstep %}
+{% endstepper %}

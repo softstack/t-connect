@@ -27,8 +27,10 @@ npm install
 * Create a .env file
 * Add your API keys and configuration settings.
 
+(some more details about the .env file content && api configuration)
+
 ### Run the Application
 
 ```
-npm start 
+npm start
 ```

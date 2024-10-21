@@ -19,3 +19,6 @@ To access the t:connect platform:
 3. Navigate to API Keys and click Generate New Key.
 4. Copy your API key for use in your application.
 
+{% hint style="info" %}
+make sure you fulfill the **prerequisites!**
+{% endhint %}
