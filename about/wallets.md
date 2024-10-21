@@ -28,7 +28,7 @@ t:connect supports a variety of wallets for both Tezos and Etherlink ecosystems.
 
 **ZenGo,** a keyless mobile wallet using threshold cryptography for security.
 
-<table><thead><tr><th width="216"></th><th width="104">AirGab</th><th width="106">Altme</th><th width="120">Atomex</th><th width="121">Guarda</th><th>Kukai</th></tr></thead><tbody><tr><td>permissionRequest</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>operationRequest</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>signRequest</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>broadcastRequest</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="216"></th><th width="104">AirGap</th><th width="106">Altme</th><th width="120">Atomex</th><th width="121">Guarda</th><th>Kukai</th></tr></thead><tbody><tr><td>permissionRequest</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>operationRequest</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>signRequest</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>broadcastRequest</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 <table><thead><tr><th width="220"></th><th width="105">Plenty</th><th width="101">Temple</th><th width="122">TrustWallet</th><th width="118">Umami</th><th>ZenGo</th></tr></thead><tbody><tr><td>permissionRequest</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>operationRequest</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>signRequest</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>broadcastRequest</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
