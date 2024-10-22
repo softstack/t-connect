@@ -65,7 +65,7 @@ You can play the game in telegram via [@TheT2Earn](https://t.me/TheT2Earnbot)
 
 * Action: Spending balance to purchase boosts.
 * Effect:
-  * Temporary Boost: Multiplies the effect of the main button clicks by x2 up to 5x for 3600 seconds down to 60s.
+  * Temporary Boost: Multiplies the effect of the main button clicks by x2 up to 5x for 3600s down to 60s.
   * Permanent Multiplier: Doubles (2x) the effect of main button clicks for the lifetime of the game.
 * Description: Allows players to strategically enhance their earning potential through boosts.
 

@@ -16,6 +16,12 @@ git clone https://github.com/softstack/telegram-mini-app-sdk-tezos.git
 cd telegram-mini-app-sdk-tezos/proof-of-concept
 ```
 
+### Navigate to the backend directory
+
+```
+cd proofofconcept-backend
+```
+
 ### Install Dependencies
 
 ```
@@ -24,13 +30,43 @@ npm install
 
 ### Configure Environment Variables
 
-* Create a .env file
+* Create a .env file and define MONGO\_URI like:
+
+```
+MONGO_URI = "YOUR_MONOGODB_CONNECTION_STRING"
+```
+
 * Add your API keys and configuration settings.
 
-(some more details about the .env file content && api configuration)
-
-### Run the Application
+### Run the backend-server
 
 ```
 npm start
 ```
+
+### Navigate to the frontend directory
+
+```
+cd proofofconcept-frontend
+```
+
+### Install Dependencies
+
+```
+npm install
+```
+
+### Configure Enviroment Variables
+
+* create .env file and define API\_BASE\_URL
+
+```
+API_BASE_URL = "YOUR_API_BASE_URL_STRING"
+```
+
+### Run the frontend-server in dev mode
+
+```
+npm run dev
+```
+
