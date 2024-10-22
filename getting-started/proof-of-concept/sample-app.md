@@ -45,7 +45,7 @@ You can play the game in telegram via [@TheT2Earn](https://t.me/TheT2Earnbot)
 ### Referral Links
 
 * Action: Generating and sending a referral link to other Telegram users.
-* Effect: Both the referrer and the new player receive a balance boost upon successful referral.
+* Effect: The referrer gets rewarded after he has invited 3 friends.
 * Description: Encourages users to invite friends, expanding the game's user base organically.
 * How to Use:
   * Click on the Referral button.

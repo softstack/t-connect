@@ -8,7 +8,19 @@ icon: bullseye-arrow
 
 {% stepper %}
 {% step %}
-### Initialize the SDK
+### Installing t:connect using npm
+
+{% hint style="info" %}
+The following instructions assume you have a project already created, and you have `npm` installed and operable.
+{% endhint %}
+
+```
+npm install <tconnect>
+```
+{% endstep %}
+
+{% step %}
+### Import the libary in your Telegram Mini App
 
 ```
 // Some code
@@ -16,18 +28,16 @@ icon: bullseye-arrow
 {% endstep %}
 
 {% step %}
-### Configure the SDK
-
-```
-// Some code
-```
-{% endstep %}
-
-{% step %}
-### Integrate into Telegram Mini App
+### Configuration
 
 ```
 // Some code
 ```
 {% endstep %}
 {% endstepper %}
+
+## Examples
+
+```
+// Some code
+```
