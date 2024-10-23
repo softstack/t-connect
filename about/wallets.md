@@ -8,12 +8,12 @@ t:connect supports a variety of wallets for both Tezos and Etherlink ecosystems.
 
 ### Supported wallets by Tezos
 
-|                   | Altme |
-| ----------------- | ----- |
-| permissionRequest |       |
-| operationRequest  |       |
-| signRequest       |       |
-| broadcastRequest  |       |
+|                   | Altme     |
+| ----------------- | --------- |
+| permissionRequest | supported |
+| operationRequest  | supported |
+| signRequest       | supported |
+| broadcastRequest  | supported |
 
 ### Supported wallets by Etherlink
 

@@ -10,7 +10,6 @@
 
 ## Getting Started
 
-* [Prerequisites](getting-started/prerequisites.md)
 * [Installation](getting-started/installation.md)
 * [Implementation Guide](getting-started/implementation-guide/README.md)
   * [How to Implement t:connect?](getting-started/implementation-guide/how-to-implement-t-connect.md)

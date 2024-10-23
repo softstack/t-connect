@@ -6,7 +6,15 @@ icon: square-code
 
 {% stepper %}
 {% step %}
-### Initialize the SDK
+### Installing t:connect using npm
+
+```
+npm install <tconnect>
+```
+{% endstep %}
+
+{% step %}
+### Import the libary in your Telegram Mini App
 
 ```
 // Some code
@@ -14,15 +22,7 @@ icon: square-code
 {% endstep %}
 
 {% step %}
-### Configure the SDK
-
-```
-// Some code
-```
-{% endstep %}
-
-{% step %}
-### Integrate into Telegram Mini App
+### Configuration
 
 ```
 // Some code

@@ -4,6 +4,17 @@ icon: window-restore
 
 # How to Deploy
 
+The Proof of Concept clicker game has been developed using **Next.js** and **Node.js** with **Express.js**, ensuring a smooth and scalable architecture. Both the frontend and backend utilize **TypeScript** for strong type checking and improved developer experience, and **React** powers the frontend for building dynamic and interactive user interfaces.
+
+**Prerequisites**
+
+To get started with development, make sure the following are installed:
+
+* **Node.js** (v14 or later)
+* **npm**
+* **TypeScript**
+* **Git** (for cloning the repository)
+
 ### Clone the Repository
 
 ```
@@ -36,13 +47,13 @@ npm install
 MONGO_URI = "YOUR_MONOGODB_CONNECTION_STRING"
 ```
 
-* Add your API keys and configuration settings.
-
 ### Run the backend-server
 
 ```
 npm start
 ```
+
+***
 
 ### Navigate to the frontend directory
 
@@ -58,7 +69,7 @@ npm install
 
 ### Configure Enviroment Variables
 
-* create .env file and define NEXT\_PUBLIC\_API\_BASE\_URL (eg. localhost:5000)
+* create .env file and define NEXT\_PUBLIC\_API\_BASE\_URL (eg. domain.com/api/v1/)
 
 ```
 NEXT_PUBLIC_API_BASE_URL = "YOUR_API_BASE_URL_STRING"
