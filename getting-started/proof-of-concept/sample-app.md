@@ -71,6 +71,10 @@ You can play the game in telegram via [@TheT2Earn](https://t.me/TheT2Earnbot)
 
 <figure><img src="../../.gitbook/assets/ActiveBoosts.PNG" alt="" width="188"><figcaption><p>boost section</p></figcaption></figure>
 
+### Wallet
+
+coming soon...
+
 ## Game Flow
 
 ### Starting the Game

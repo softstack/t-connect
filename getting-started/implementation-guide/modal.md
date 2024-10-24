@@ -48,9 +48,9 @@ icon: square-code
 
 {% stepper %}
 {% step %}
-#### Blockchain Library Selection
+#### Blockchain  Selection
 
-The modal first provides the option to choose the blockchain library to be used. The user can select between Tezos, ethers.js (for Ethereum-compatible chains like Etherlink), or web3.js.
+The modal first provides the option to choose the blockchain  to be used. The user can select between Tezos or Etherlink.
 
 \<screenshot>
 {% endstep %}
@@ -58,7 +58,7 @@ The modal first provides the option to choose the blockchain library to be used.
 {% step %}
 #### Wallet Selection
 
-After selecting the library, the user is prompted to choose a wallet. The list of available wallets is automatically filtered based on the previously chosen blockchain library.
+After selecting the Blockchain, the user is prompted to choose a wallet. The list of available wallets is automatically filtered based on the previously chosen blockchain.
 
 \<screenshot>
 {% endstep %}
