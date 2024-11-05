@@ -52,7 +52,7 @@ icon: square-code
 
 The modal first provides the option to choose the blockchain  to be used. The user can select between Tezos or Etherlink.
 
-\<screenshot>
+<img src="../../.gitbook/assets/Screenshot 2024-11-05 at 09.24.27.png" alt="" data-size="original">
 {% endstep %}
 
 {% step %}
@@ -60,7 +60,7 @@ The modal first provides the option to choose the blockchain  to be used. The us
 
 After selecting the Blockchain, the user is prompted to choose a wallet. The list of available wallets is automatically filtered based on the previously chosen blockchain.
 
-\<screenshot>
+<img src="../../.gitbook/assets/Screenshot 2024-11-05 at 09.24.46.png" alt="" data-size="original">
 {% endstep %}
 
 {% step %}
@@ -68,14 +68,12 @@ After selecting the Blockchain, the user is prompted to choose a wallet. The lis
 
 Once a wallet is selected, the `connect()` method is triggered to establish the connection. The user is prompted within the wallet to authorize the connection.
 
-\<screenshot>
+<img src="../../.gitbook/assets/Screenshot 2024-11-05 at 09.32.43.png" alt="" data-size="original">
 {% endstep %}
 
 {% step %}
 #### Connection Etablished
 
 After a successful connection, the modal closes, and the developer can use the wallet information (e.g., address, wallet name, chain) for further interactions.
-
-\<screenshot>
 {% endstep %}
 {% endstepper %}
