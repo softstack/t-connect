@@ -58,8 +58,46 @@ const getBalance = async () => {
 
 ### Interact with a smart contract <a href="#interact-with-a-smart-contract" id="interact-with-a-smart-contract"></a>
 
+This code snippet demonstrates how to use `web3.js` and the `TConnectEvmProvider` to fetch the token balance of a given address from an Etherlink contract with a `balanceOf` method. Here’s an explanation of the code:
+
 ```
-// Some code
+import { EvmWalletApp, TConnectEvmProvider } from '@tconnect.io/evm-p
+import Web3 from 'web3';
+
+const app: EvmWalletApp = 'metaMask';
+const provider = new TConnectEvmProvider({ walletApp: app, apiKey: 'PIVATE_API_KEY' });
+const web3 = new Web3(provider);
+
+// Contract ABI and address
+const contractAddress = '0xYourContractAddress';
+const abi = [ /* Insert the ABI of the smart contract here */ ];
+
+// Define a type for the contract instance with the balanceOf method
+interface TokenContract extends Web3.eth.Contract {
+  methods: {
+    balanceOf(address: string): {
+      call(): Promise<string>;
+    };
+  };
+}
+
+// Create a contract instance
+const contract = new web3.eth.Contract(abi, contractAddress) as TokenContract;
+
+// Function to retrieve the token balance for a specific account
+async function getTokenBalance(address: string): Promise<void> {
+  try {
+    const balance = await contract.methods.balanceOf(address).call();
+    console.log('Token Balance:', balance);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+// Example call with a specific wallet address
+const address = '0xYourWalletAddress';
+getTokenBalance(address);
+
 ```
 
 {% hint style="info" %}
