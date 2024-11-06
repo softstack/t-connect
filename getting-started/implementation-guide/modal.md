@@ -23,15 +23,45 @@ icon: square-code
 #### Initialize t:connect in Your Mini App
 
 ```
-// Some code
+npm install @tconnect/modal
 ```
 {% endstep %}
 
 {% step %}
 #### Display the Wallet Connection Modal
 
+To display the modal, the `openModal` method is called within the `useModal` hook inside the `ModalProvider`.
+
+We recommend first providing the TConnectModalProvider, for example in `App.tsx`, and then calling the `openModal` method within a component that is inside the provider.
+
 ```
-// Some code
+import { TConnectModalProvider, useTConnectModal } from '@tconnect.io/modal';
+import { Main } from './pages/Main';
+
+<TConnectModalProvider apiKey="PRIVATE_API_KEY" >			
+    <Main/>				
+</TConnectModalProvider>
+			
+```
+
+The `TConnectModalProvider` requires an API key. Additionally, you can optionally specify:
+
+* `children?: ReactNode | undefined;`
+* `onError?: (error: unknown) => void;`
+
+Now, within the provider, in this example in the `Main` component, the `openModal` method can be called to display the modal for wallet selection.
+
+```
+import { useTConnectModal } from '@tconnect.io/modal';
+
+export const Main = () => {
+	const tConnect = useTConnectModal();
+	return (
+	<button onClick={tConnect.openModal}>open modal</button>
+	);
+};
+
+Main.displayName = 'Main';
 ```
 {% endstep %}
 
