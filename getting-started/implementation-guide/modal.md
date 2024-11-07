@@ -16,12 +16,10 @@ icon: square-code
 * **Secure Authentication**: Ensures that user credentials and private keys remain secure during the connection.
 * **Customizable Appearance**: Developers can tailor the modal's look and feel to match their app's branding.
 
-### How to Implement the Wallet Connection Modal
+### How to Implement the Wallet Connection ModaInitialize t:connect in Your Mini App
 
 {% stepper %}
 {% step %}
-#### Initialize t:connect in Your Mini App
-
 ```
 npm install @tconnect/modal
 ```
@@ -48,6 +46,10 @@ The `TConnectModalProvider` requires an API key. Additionally, you can optionall
 
 * `children?: ReactNode | undefined;`
 * `onError?: (error: unknown) => void;`
+
+{% hint style="info" %}
+Wondering how to obatin an api key? see: [Broken link](broken-reference "mention")
+{% endhint %}
 
 Now, within the provider, in this example in the `Main` component, the `openModal` method can be called to display the modal for wallet selection.
 

@@ -8,7 +8,7 @@ Provider services enable connection to the Tezos and Etherlink networks. Provide
 
 TConnect provides two providers, one for each blockchain. For Etherlink, it uses the `TConnectEvmProvider`, while for the Tezos main chain, the `TConnectTezosProvider` is used. While their functionalities are similar, there are differences in the configuration.
 
-### Configure TConnectTezosProvider
+### Configure TConnectEvmProvider
 
 The `EvmWalletApp` type is defined as a union type, which allows the variable `app` to be one of the following values: `'bitget'`, `'metaMask'`, `'rainbow'`, `'safePal'`, or `'trust'`. These are the supported wallet applications that can be used with the `TConnectEvmProvider`.
 
