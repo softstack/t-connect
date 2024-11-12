@@ -37,8 +37,8 @@ A: Ensure all prerequisites are met and consult the documentation. If issues per
 
 <details>
 
-<summary>Q4: </summary>
+<summary>Q4: What can I do if I use Next.js and have problems loading the modal's images?</summary>
 
-
+If you're using Next.js and have problems loading the modal's images, make sure to update your `next.config.js` to properly handle image assets. Specifically, add custom Webpack rules to process SVG and PNG files as `asset/resource`and ensure the correct `publicPath` and `outputPath` are set. This helps Next.js locate the images correctly and avoids caching issues or incorrect paths.
 
 </details>
