@@ -12,7 +12,7 @@ To get started with development, make sure the following are installed:
 
 * **Node.js** (v14 or later)
 * **npm**
-* **TypeScript**
+* **MongoDB**
 * **Git** (for cloning the repository)
 
 ### Clone the Repository
