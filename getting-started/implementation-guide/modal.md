@@ -6,57 +6,89 @@ icon: square-code
 
 ### Wallet Connection Modal
 
-**t:connect** provides a built-in **Wallet Connection Modal** that simplifies the process of connecting users to the Tezos and Etherlink blockchains via supported wallets. This modal is a ready-to-use component that developers can integrate into their Telegram Mini Apps, allowing users to securely and effortlessly connect their wallets.
+**t:connect** provides a built-in Wallet Connection Modal, developed in React, that simplifies the process of connecting users via supported wallets to Tezos and Etherlink. Leveraging React Provider and Hook technology, this ready-to-use modal component facilitates state management and enables seamless integration into the component tree. Developers can easily embed it into their Telegram Mini App, allowing users to securely and effortlessly connect their wallets.
 
 **Features of the Wallet Connection Modal**
 
 * **User-Friendly Interface**: An intuitive UI that guides users through the wallet connection process.
-* **Multi-Chain Support**: Supports both Tezos and Etherlink chains, offering flexibility for various applications.
-* **Multiple Wallet Options**: Compatible with a range of wallets like MetaMask, Trust Wallet, Altme, and more.
+* **Multi-Chain Support**: Supports both Tezos and Etherlink, offering flexibility for various applications.
+* **Multiple Wallet Options**: Compatible with a range of wallets like Altme, MetaMask, Trust Wallet, and more.
 * **Secure Authentication**: Ensures that user credentials and private keys remain secure during the connection.
-* **Customizable Appearance**: Developers can tailor the modal's look and feel to match their app's branding.
 
-### How to Implement the Wallet Connection ModaInitialize t:connect in Your Mini App
+### The TConnectModalProvider
+
+The TConnectModalProvider has three options:
+
+<pre><code><strong>apiKey: string; 
+</strong></code></pre>
+
+{% hint style="info" %}
+Wondering how to obatin an api key? see: [Broken link](broken-reference "mention")
+{% endhint %}
+
+```
+children?: ReactNode | undefined; 
+```
+
+```
+onError?: (error: unknown) => void;
+```
+
+### The TConnectModal Hook
+
+```
+// function to open the modal
+openModal: () => void;
+
+// function to clode the modal
+closeModal: () => void;
+
+// the evm Provider
+evmProvider: TConnectEvmProvider | undefined;
+
+// the tezos-beacon Provider
+tezosBeaconProvider: TConnectTezosBeaconProvider | undefined;
+
+// the Tezos WalletConnect Provider
+tezosWcProvider: TConnectTezosWcProvider | undefined;
+
+// true if successfully connected
+connected: boolean;
+```
+
+### How to use the Wallet Connection Modal
 
 {% stepper %}
 {% step %}
 ```
-npm install @tconnect/modal
+npm install @tconnect.io/modal
+```
+{% endstep %}
+
+{% step %}
+#### Setup the Modal Provider
+
+We recommend first providing the TConnectModalProvider, for example in `Layout.tsx.`&#x20;
+
+```
+import { TConnectModalProvider } from '@tconnect.io/modal';
+import { App } from './pages/App';
+
+<TConnectModalProvider apiKey="PRIVATE_API_KEY" >			
+    <App/>				
+</TConnectModalProvider>
 ```
 {% endstep %}
 
 {% step %}
 #### Display the Wallet Connection Modal
 
-To display the modal, the `openModal` method is called within the `useModal` hook inside the `ModalProvider`.
-
-We recommend first providing the TConnectModalProvider, for example in `App.tsx`, and then calling the `openModal` method within a component that is inside the provider.
-
-```
-import { TConnectModalProvider, useTConnectModal } from '@tconnect.io/modal';
-import { Main } from './pages/Main';
-
-<TConnectModalProvider apiKey="PRIVATE_API_KEY" >			
-    <Main/>				
-</TConnectModalProvider>
-			
-```
-
-The `TConnectModalProvider` requires an API key. Additionally, you can optionally specify:
-
-* `children?: ReactNode | undefined;`
-* `onError?: (error: unknown) => void;`
-
-{% hint style="info" %}
-Wondering how to obatin an api key? see: [Broken link](broken-reference "mention")
-{% endhint %}
-
-Now, within the provider, in this example in the `Main` component, the `openModal` method can be called to display the modal for wallet selection.
+Now, within the provider, in this example in the `App` component, the `openModal` method can be called to display the modal for wallet selection.
 
 ```
 import { useTConnectModal } from '@tconnect.io/modal';
 
-export const Main = () => {
+export const App = () => {
 	const tConnect = useTConnectModal();
 	return (
 	<button onClick={tConnect.openModal}>open modal</button>
@@ -64,14 +96,6 @@ export const Main = () => {
 };
 
 Main.displayName = 'Main';
-```
-{% endstep %}
-
-{% step %}
-#### Customize the Modal (Optional)
-
-```
-// Some code
 ```
 {% endstep %}
 {% endstepper %}
@@ -98,14 +122,12 @@ After selecting the Blockchain, the user is prompted to choose a wallet. The lis
 {% step %}
 #### Wallet Connection Execution
 
-Once a wallet is selected, the `connect()` method is triggered to establish the connection. The user is prompted within the wallet to authorize the connection.
-
-<img src="../../.gitbook/assets/Screenshot 2024-11-05 at 09.32.43.png" alt="" data-size="original">
+Once a wallet is selected, the user is redirected to the wallet and prompted to authorize the connection.
 {% endstep %}
 
 {% step %}
 #### Connection Etablished
 
-After a successful connection, the modal closes, and the developer can use the wallet information (e.g., address, wallet name, chain) for further interactions.
+After a successful connection, the modal closes, and the developer get the provider from the Modal Hook.&#x20;
 {% endstep %}
 {% endstepper %}
