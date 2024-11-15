@@ -126,8 +126,14 @@ Once a wallet is selected, the user is redirected to the wallet and prompted to 
 {% endstep %}
 
 {% step %}
-#### Connection Etablished
+#### Connection Established
 
 After a successful connection, the modal closes, and the developer get the provider from the Modal Hook.&#x20;
+{% endstep %}
+
+{% step %}
+#### Disconnection
+
+If  connection is established, you can open the modal and disconnect&#x20;
 {% endstep %}
 {% endstepper %}
