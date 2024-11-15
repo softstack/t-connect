@@ -95,7 +95,7 @@ export const App = () => {
 	);
 };
 
-Main.displayName = 'Main';
+App.displayName = 'App';
 ```
 {% endstep %}
 {% endstepper %}

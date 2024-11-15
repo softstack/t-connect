@@ -15,34 +15,35 @@ The following instructions assume you have a project already created, and you ha
 {% endhint %}
 
 ```
-npm install <tconnect>
+npm install @tconnect.io/modal
+npm install @tconnect.io/evm-provider
+npm install @tconnect.io/tezos-wc-provider
+npm install @tconnect.io/tezos-beacon-provider
 ```
 {% endstep %}
 
 {% step %}
-### Import the libary in your Telegram Mini App
-
-The constructor of the `tconnect` class takes an RPC URL as a parameter. It has to be a string. A list of  nodes can be accessed [here](../getting-started/implementation-guide/providers.md).
+### Importing
 
 ```
-import { tconnect } from '<@tconnect/tconnect>';
-
-const tconnect = new teconnect('https://YOUR_PREFERRED_RPC_URL');
+import { TConnectModalProvider } from '@tconnect.io/modal';
+import { TConnectEvmProvider } from '@tconnect.io/evm-provider';
+import { TConnectTezosBeaconProvider } from '@tconnect.io/tezos-beacon-provider';
+import { TConnectTezosWcProvider } from '@tconnect.io/tezos-wc-provider';
 ```
 {% endstep %}
 
 {% step %}
-### Configuration
+### Example using TConnectEvmProvider
 
 ```
-// Some code
+import { EvmWalletApp, TConnectEvmProvider } from '@tconnect.io/evm-provider';
+
+const app: EvmWalletApp = 'metaMask';
+const provider = new TConnectEvmProvider({ 
+        walletApp: app,
+        apiKey: 'PRIVATE_API_KEY' 
+ });
 ```
 {% endstep %}
 {% endstepper %}
-
-## Examples
-
-```
-// Some code
-```
-
