@@ -73,7 +73,10 @@ You can play the game in telegram via [@TheT2Earn](https://t.me/TheT2Earnbot)
 
 ### Wallet
 
-coming soon...
+* Action: Connect to the wallet
+* Description: The @tconnect.io/modal opens and the user can connect to his favorite wallet
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-11-05 at 09.24.27.png" alt="" width="188"><figcaption></figcaption></figure>
 
 ## Game Flow
 
