@@ -17,20 +17,40 @@ icon: square-code
 
 ### The TConnectModalProvider
 
-The TConnectModalProvider has three options:
+The TConnectModalProvider has six options:
 
-<pre><code><strong>apiKey: string; 
-</strong></code></pre>
+```
+// API-key to get access to our service
+apiKey: string; 
+```
 
 {% hint style="info" %}
 Wondering how to obatin an api key? see: [Broken link](broken-reference "mention")
 {% endhint %}
 
 ```
+// The URL used to establish a connection
+bridgeUrl: string;
+```
+
+```
+// Optional URL for a generic wallet connection
+genericWalletUrl?: string;
+```
+
+```
+// Optional array to specify which networks to filter or allow.
+networkFilter?: Array<'etherlink' | 'tezos'>;
+```
+
+```
+// Optional ReactNode to be rendered as the content of the provider.
 children?: ReactNode | undefined; 
 ```
 
 ```
+// Optional callback triggered when an error occurs.
+// Receives the error object as an argument.
 onError?: (error: unknown) => void;
 ```
 
