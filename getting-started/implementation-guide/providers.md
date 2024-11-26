@@ -14,11 +14,20 @@ TConnect offers three providers. For Etherlink, you must use the `TConnectEvmPro
 import { EvmWalletApp, TConnectEvmProvider } from '@tconnect.io/evm-provider';
 
 const app: EvmWalletApp = 'metaMask';
-const provider = new TConnectEvmProvider({ walletApp: app, apiKey: 'PRIVATE_API_KEY' });
+const provider = new TConnectEvmProvider({ 
+                                 appName: "Example App";
+                                 appUrl: "https://domain.io"";
+                                 bridgeUrl: "https://bridge.url.io";
+                                 walletApp: app,
+                                 apiKey: 'PRIVATE_API_KEY' 
+                                 });
 ```
 
 ```
 TConnectEvmProviderOptions { 
+        appName: string;
+        appUrl: string;
+        bridgeUrl: string;
         apiKey: string; 
         walletApp?: EvmWalletApp; 
     }
@@ -26,19 +35,24 @@ TConnectEvmProviderOptions {
 
 ### Configure TConnectWcProvider
 
-```
-import { TConnectTezosWcProvider } from '@tconnect.io/tezos-wc-provider';
-import { TezosWcWalletApp } from '@tconnect.io/tezos-wc-provider;
+<pre><code><strong>import { TConnectTezosWcProvider } from '@tconnect.io/tezos-wc-provider';
+</strong>import { TezosWcWalletApp } from '@tconnect.io/tezos-wc-provider;
 
 const provider = new TConnectTezosWcProvider({
+				appName: "Example App";
+				appUrl: "https://domain.io"";
+				bridgeUrl: "https://bridge.url.io";
 				apiKey: 'PRIVATE_API_KEY',
 				walletApp,
 				network: 'ghostnet',
 			});
-```
+</code></pre>
 
 ```
 TConnectTezosWcProviderOptions {
+	appName: string;
+	appUrl: string;
+	bridgeUrl: string;
 	apiKey: string;
 	network: Network;
 	walletApp?: TezosWcWalletApp;
@@ -52,8 +66,11 @@ import { TConnectTezosBeaconProvider } from '@tconnect.io/tezos-beacon-provider'
 import { TezosBeaconWalletApp } from '@tconnect.io/tezos-beacon-provider;
 
 const provider = new TConnectTezosBeaconProvider({
+				appName: "Example App";
+				appUrl: "https://domain.io"";
+				bridgeUrl: "https://bridge.url.io";
 				secretSeed,
-				apiKey: 'a',
+				apiKey: 'PRIVATE_API_KEY',
 				network: { 
 				           type: 'ghostnet',
 				           name: 'Ghostnet',
@@ -66,6 +83,9 @@ const provider = new TConnectTezosBeaconProvider({
 ```
 TConnectTezosBeaconProviderOptions {
     secretSeed: string;
+    appName: string;
+    appUrl: string;
+    bridgeUrl: string;
     apiKey: string;
     network: Network;
     walletApp?: TezosBeaconWalletApp;
