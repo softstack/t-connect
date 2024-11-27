@@ -13,6 +13,9 @@ layout:
     visible: true
 ---
 
-# Welcome
+# Welcome to t:connect
 
-Welcome to the **t:connect** documentation! We're excited to introduce you to our powerful SDK that enables seamless interaction with wallets, the Tezos blockchain, and the Etherlink chain directly from Telegram Mini Apps. This guide is designed to help you effectively integrate t:connect into your projects, bringing advanced blockchain functionalities into the familiar Telegram environment. Whether you're a developer aiming to create innovative solutions or a business looking to enhance your applications, t:connect provides the tools to make Web3 capabilities accessible to a broad audience.
+We're excited to introduce you to t:connect, the Telegram Mini App SDK that enables seamless interaction with wallets of  Tezos and Etherlink chain.&#x20;
+
+This guide is designed to help you effectively integrate t:connect into your projects, bringing wallet functionalities into the familiar Telegram environment. Whether you're a developer aiming to create innovative solutions or a business looking to enhance your applications, t:connect provides the tools to make Web3 capabilities accessible to a broad audience.
+

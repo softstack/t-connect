@@ -9,6 +9,9 @@ Contact Support
 Email: [hello@softstack.io](mailto:hello@softstack.io)\
 Telegram: [@yannikheinze](https://t.me/yannikheinze)
 
+\
+Request API key: [https://swfe3fmu6fc.typeform.com/to/qP56yNc5](https://swfe3fmu6fc.typeform.com/to/qP56yNc5)&#x20;
+
 ### FAQ
 
 <details>
@@ -23,7 +26,7 @@ A: Refer to the Supported Wallets section for a list of compatible wallets.
 
 <summary>Q2: How do I obtain an API key?</summary>
 
-A: Follow the steps in the Get an API Key section.
+A: Use our Typeform to obtain an API key [https://swfe3fmu6fc.typeform.com/to/qP56yNc5](https://swfe3fmu6fc.typeform.com/to/qP56yNc5)&#x20;
 
 </details>
 

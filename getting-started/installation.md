@@ -40,7 +40,7 @@ npm install @tconnect.io/tezos-wc-provider
 
 ### Get an API Key
 
-To obtain an API key, please contact [support](../support.md).
+To obtain an API key, please fill out the form: [https://swfe3fmu6fc.typeform.com/to/qP56yNc5](https://swfe3fmu6fc.typeform.com/to/qP56yNc5)
 
 {% hint style="info" %}
 make sure you fulfill the **prerequisites!**
