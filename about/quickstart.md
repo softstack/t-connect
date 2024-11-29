@@ -41,9 +41,12 @@ import { EvmWalletApp, TConnectEvmProvider } from '@tconnect.io/evm-provider';
 
 const app: EvmWalletApp = 'metaMask';
 const provider = new TConnectEvmProvider({ 
-        walletApp: app,
-        apiKey: 'PRIVATE_API_KEY' 
- });
+                                 appName: "Example App";
+                                 appUrl: "https://domain.io"";
+                                 bridgeUrl: "https://bridge.url.io";
+                                 walletApp: app,
+                                 apiKey: 'PRIVATE_API_KEY' 
+                                 });
 ```
 {% endstep %}
 {% endstepper %}
