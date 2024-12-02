@@ -17,25 +17,25 @@ To get started with development, make sure the following are installed:
 
 ### Clone the Repository
 
-```
+```typescript
 git clone https://github.com/softstack/telegram-mini-app-sdk-tezos.git
 ```
 
 ### Navigate to the Proof-of-Concept Directory
 
-```
+```typescript
 cd telegram-mini-app-sdk-tezos/proof-of-concept
 ```
 
 ### Navigate to the backend directory
 
-```
+```typescript
 cd proofofconcept-backend
 ```
 
 ### Install Dependencies
 
-```
+```typescript
 npm install
 ```
 
@@ -43,13 +43,13 @@ npm install
 
 * Create a .env file and define MONGO\_URI like:
 
-```
+```typescript
 MONGO_URI = "YOUR_MONOGODB_CONNECTION_STRING"
 ```
 
 ### Run the backend-server
 
-```
+```typescript
 npm start
 ```
 
@@ -57,13 +57,13 @@ npm start
 
 ### Navigate to the frontend directory
 
-```
+```typescript
 cd proofofconcept-frontend
 ```
 
 ### Install Dependencies
 
-```
+```typescript
 npm install
 ```
 
@@ -71,13 +71,13 @@ npm install
 
 * create .env file and define NEXT\_PUBLIC\_API\_BASE\_URL (eg. domain.com/api/v1/)
 
-```
+```typescript
 NEXT_PUBLIC_API_BASE_URL = "YOUR_API_BASE_URL_STRING"
 ```
 
 ### Run the frontend-server in dev mode
 
-```
+```typescript
 npm run dev
 ```
 

@@ -22,4 +22,12 @@ Added
 * Proof of Concept: Example use cases and sample projects to demonstrate functionality.
 * Support: Resources and contact information for troubleshooting and further assistance.
 {% endstep %}
+
+{% step %}
+\[v0.0.2] - 2024-12-02
+
+Added:&#x20;
+
+* Code Highlighting
+{% endstep %}
 {% endstepper %}

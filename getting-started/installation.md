@@ -16,25 +16,25 @@ The t:connect SDK offers a react-modal and provider. The provider and the modal 
 
 #### Install the Modal
 
-```
+```typescript
 npm install @tconnect.io/modal
 ```
 
 #### Install the Evm Provider
 
-```
+```typescript
 npm install @tconnect.io/evm-provider
 ```
 
 #### Install the Tezos Beacon Provider
 
-```
+```typescript
 npm install @tconnect.io/tezos-beacon-provider
 ```
 
 #### Install the Tezos Wallet Connect Provider
 
-```
+```typescript
 npm install @tconnect.io/tezos-wc-provider
 ```
 

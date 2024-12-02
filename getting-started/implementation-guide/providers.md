@@ -10,7 +10,7 @@ TConnect offers three providers. For Etherlink, you must use the `TConnectEvmPro
 
 ### &#x20;Configure TConnectEvmProvider
 
-```
+```typescript
 import { EvmWalletApp, TConnectEvmProvider } from '@tconnect.io/evm-provider';
 
 const app: EvmWalletApp = 'metaMask';
@@ -23,7 +23,7 @@ const provider = new TConnectEvmProvider({
                                  });
 ```
 
-```
+```typescript
 TConnectEvmProviderOptions { 
         appName: string;
         appUrl: string;
@@ -35,7 +35,7 @@ TConnectEvmProviderOptions {
 
 ### Configure TConnectWcProvider
 
-<pre><code><strong>import { TConnectTezosWcProvider } from '@tconnect.io/tezos-wc-provider';
+<pre class="language-typescript"><code class="lang-typescript"><strong>import { TConnectTezosWcProvider } from '@tconnect.io/tezos-wc-provider';
 </strong>import { TezosWcWalletApp } from '@tconnect.io/tezos-wc-provider;
 
 const provider = new TConnectTezosWcProvider({
@@ -48,7 +48,7 @@ const provider = new TConnectTezosWcProvider({
 			});
 </code></pre>
 
-```
+```typescript
 TConnectTezosWcProviderOptions {
 	appName: string;
 	appUrl: string;
@@ -61,7 +61,7 @@ TConnectTezosWcProviderOptions {
 
 ### Configure TConnectTezosProvider
 
-```
+```typescript
 import { TConnectTezosBeaconProvider } from '@tconnect.io/tezos-beacon-provider';
 import { TezosBeaconWalletApp } from '@tconnect.io/tezos-beacon-provider;
 
@@ -80,7 +80,7 @@ const provider = new TConnectTezosBeaconProvider({
 			});
 ```
 
-```
+```typescript
 TConnectTezosBeaconProviderOptions {
     secretSeed: string;
     appName: string;

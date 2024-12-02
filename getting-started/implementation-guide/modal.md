@@ -19,7 +19,7 @@ icon: square-code
 
 The TConnectModalProvider has six options:
 
-```
+```typescript
 // API-key to get access to our service
 apiKey: string; 
 ```
@@ -28,27 +28,27 @@ apiKey: string;
 Wondering how to obatin an api key? see: [Broken link](broken-reference "mention")
 {% endhint %}
 
-```
+```typescript
 // The URL used to establish a connection
 bridgeUrl: string;
 ```
 
-```
+```typescript
 // Optional URL for a generic wallet connection
 genericWalletUrl?: string;
 ```
 
-```
+```typescript
 // Optional array to specify which networks to filter or allow.
 networkFilter?: Array<'etherlink' | 'tezos'>;
 ```
 
-```
+```typescript
 // Optional ReactNode to be rendered as the content of the provider.
 children?: ReactNode | undefined; 
 ```
 
-```
+```typescript
 // Optional callback triggered when an error occurs.
 // Receives the error object as an argument.
 onError?: (error: unknown) => void;
@@ -56,7 +56,7 @@ onError?: (error: unknown) => void;
 
 ### The TConnectModal Hook
 
-```
+```typescript
 // function to open the modal
 openModal: () => void;
 
@@ -80,7 +80,7 @@ connected: boolean;
 
 {% stepper %}
 {% step %}
-```
+```typescript
 npm install @tconnect.io/modal
 ```
 {% endstep %}
@@ -90,7 +90,7 @@ npm install @tconnect.io/modal
 
 We recommend first providing the TConnectModalProvider, for example in `Layout.tsx.`&#x20;
 
-```
+```typescript
 import { TConnectModalProvider } from '@tconnect.io/modal';
 import { App } from './pages/App';
 
@@ -105,7 +105,7 @@ import { App } from './pages/App';
 
 Now, within the provider, in this example in the `App` component, the `openModal` method can be called to display the modal for wallet selection.
 
-```
+```typescript
 import { useTConnectModal } from '@tconnect.io/modal';
 
 export const App = () => {
