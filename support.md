@@ -12,10 +12,6 @@ Telegram: [@yannikheinze](https://t.me/yannikheinze)
 \
 Request API key:  [https://swfe3fmu6fc.typeform.com/to/qP56yNc5](https://swfe3fmu6fc.typeform.com/to/qP56yNc5)
 
-
-
-[https://swfe3fmu6fc.typeform.com/to/qP56yNc5](https://swfe3fmu6fc.typeform.com/to/qP56yNc5)
-
 ### FAQ
 
 <details>
