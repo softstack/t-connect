@@ -34,6 +34,16 @@ bridgeUrl: string;
 ```
 
 ```typescript
+// Name of your application
+appName: string;
+```
+
+```typescript
+// The Url of your application
+appUrl: string;
+```
+
+```typescript
 // Optional URL for a generic wallet connection
 genericWalletUrl?: string;
 ```
@@ -94,8 +104,13 @@ We recommend first providing the TConnectModalProvider, for example in `Layout.t
 import { TConnectModalProvider } from '@tconnect.io/modal';
 import { App } from './pages/App';
 
-<TConnectModalProvider apiKey="PRIVATE_API_KEY" >			
-    <App/>				
+<TConnectModalProvider
+          appName={"Example App"}
+          appUrl={"https://your-domain.io"}
+          bridgeUrl={"https://tconnect.io"}
+          apiKey={"PRIVATE_API_KEY"}
+        >
+    <App/>    
 </TConnectModalProvider>
 ```
 {% endstep %}
