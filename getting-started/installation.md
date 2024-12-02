@@ -10,9 +10,9 @@ icon: folder-gear
 * Development Environment: Node.js (v14 or later), NPM.
 * Tezos/Etherlink Wallet: For testing blockchain interactions.
 
-### Install the t:connect sdk via npm
+### Install the t:connect SDK via npm
 
-The t:connect sdk offers a react-modal and provider. The provider and the modal can be loaded separately as needed.
+The t:connect SDK offers a react-modal and provider. The provider and the modal can be loaded separately as needed.
 
 #### Install the Modal
 
