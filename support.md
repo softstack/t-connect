@@ -10,7 +10,11 @@ Email: [hello@softstack.io](mailto:hello@softstack.io)\
 Telegram: [@yannikheinze](https://t.me/yannikheinze)
 
 \
-Request API key: [https://swfe3fmu6fc.typeform.com/to/qP56yNc5](https://swfe3fmu6fc.typeform.com/to/qP56yNc5)&#x20;
+Request API key:  [https://swfe3fmu6fc.typeform.com/to/qP56yNc5](https://swfe3fmu6fc.typeform.com/to/qP56yNc5)
+
+
+
+[https://swfe3fmu6fc.typeform.com/to/qP56yNc5](https://swfe3fmu6fc.typeform.com/to/qP56yNc5)
 
 ### FAQ
 
