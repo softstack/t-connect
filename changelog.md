@@ -14,10 +14,12 @@ description: All changes to the documentation are tracked in this changelog.
 Added
 
 * Initial release of the documentation.
-* **Introduction**: Overview of the software and its use cases.
-* **Installation Guide**: Steps to set up the SDK.
-* **Getting Started**: Examples for using core features.
-* **Frequently Asked Questions (FAQ)**: Answers to common questions.
-* **Proof of Concept:** &#x20;
+* Quickstart: Step-by-step guide to get started quickly.
+* Introduction: Overview of the software, its purpose, and key features.
+* Wallets: List of supported wallets.
+* Installation: Detailed steps to install and configure the SDK.
+* Implementation Guide: Comprehensive instructions for integrating the software into your environment.
+* Proof of Concept: Example use cases and sample projects to demonstrate functionality.
+* Support: Resources and contact information for troubleshooting and further assistance.
 {% endstep %}
 {% endstepper %}
