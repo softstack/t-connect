@@ -11,35 +11,41 @@ TConnect offers three providers. For Etherlink, you must use the `TConnectEvmPro
 ### &#x20;Configure TConnectEvmProvider
 
 ```typescript
+// Import provider
 import { EvmWalletApp, TConnectEvmProvider } from '@tconnect.io/evm-provider';
 
 const app: EvmWalletApp = 'metaMask';
+// Initialize provider
 const provider = new TConnectEvmProvider({
-              appName: "Example App",
-              appUrl: "https://your-domain.io",
-              bridgeUrl: "https://tconnect.io",
-              apiKey: "PRIVATE_API_KEY",
-              walletApp: app,
+                appName: "Example App",
+                appUrl: "https://your-domain.io",
+                bridgeUrl: "https://tconnect.io",
+                apiKey: "PRIVATE_API_KEY",
+                walletApp: app,
   });
+ // Connect to wallet
+ await provider.connect();
 ```
 
 ```typescript
 TConnectEvmProviderOptions { 
-              appName: string;
-              appUrl: string;
-              appIcon?: string;
-              bridgeUrl: string;
-              apiKey: string;
-              walletApp?: EvmWalletApp;
+                appName: string;
+                appUrl: string;
+                appIcon?: string;
+                bridgeUrl: string;
+                apiKey: string;
+                walletApp?: EvmWalletApp;
     }
 ```
 
 ### Configure TConnectWcProvider
 
-<pre class="language-typescript"><code class="lang-typescript"><strong>import { TConnectTezosWcProvider } from '@tconnect.io/tezos-wc-provider';
+<pre class="language-typescript"><code class="lang-typescript">// Import provider
+<strong>import { TConnectTezosWcProvider } from '@tconnect.io/tezos-wc-provider';
 </strong>import {TezosWcWalletApp} from '@tconnect.io/tezos-wc-provider';
 
 const app: TezosWcWalletApp = "kukai";
+// Initialize provider
 const provider = new TConnectTezosWcProvider({
                 appName: "Example App",
                 appUrl: "https://your-domain.io",
@@ -48,6 +54,8 @@ const provider = new TConnectTezosWcProvider({
                 walletApp: app,
                 network: "ghostnet",
   });
+ // Connect to wallet
+ await provider.connect();
 </code></pre>
 
 ```typescript
@@ -65,11 +73,13 @@ TConnectTezosWcProviderOptions {
 ### Configure TConnectTezosProvider
 
 ```typescript
+// Import provider
 import { TConnectTezosBeaconProvider } from '@tconnect.io/tezos-beacon-provider';
 import { TezosBeaconWalletApp } from '@tconnect.io/tezos-beacon-provider;
 
 const app: TezosBeaconWalletApp = "altme";
 const secretSeed = "SECRET_SEED";
+// Initialize provider
 const provider = new TConnectTezosBeaconProvider({
                 appName: "Example App",
                 appUrl: "https://your-domain.io",
@@ -83,6 +93,8 @@ const provider = new TConnectTezosBeaconProvider({
                 },
                 walletApp: app,
   });
+ // Connect to wallet
+ await provider.connect();
 ```
 
 ```typescript
