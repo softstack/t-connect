@@ -111,5 +111,28 @@ TConnectTezosBeaconProviderOptions {
 ```
 
 {% hint style="info" %}
-If no walletApp is provided when creating the provider, a wallet connection can be established using a connection string. However, if you intend to connect to a wallet represented by the type `EvmWalletApp, TezosBeaconWalletApp or TezosWcWalletApp` it is recommended to provide it explicitly.
+If no walletApp is provided when creating the provider, a wallet connection can be established using the connection string. However, if you intend to connect to a wallet represented by the type `EvmWalletApp, TezosBeaconWalletApp or TezosWcWalletApp` it is recommended to provide it explicitly.
 {% endhint %}
+
+### Connect via connection string
+
+```typescript
+// Import provider
+import { TConnectEvmProvider } from '@tconnect.io/evm-provider';
+
+// Initialize provider
+const provider = new TConnectEvmProvider({
+                appName: "Example App",
+                appUrl: "https://your-domain.io",
+                bridgeUrl: "https://tconnect.io",
+                apiKey: "PRIVATE_API_KEY",
+  });
+  
+ // Listen for 'connectionString' event
+ provider.on("connectionString", (connectionString) => {
+   console.log(connectionString);
+ });
+ 
+ // Connect to wallet
+ await provider.connect();
+```
