@@ -28,6 +28,15 @@ Added
 
 Added:&#x20;
 
-* Code Highlighting
+* Use code highlighting
+{% endstep %}
+
+{% step %}
+\[v0.0.3] - 2024-12-04
+
+Added:&#x20;
+
+* Screenshots of Modal in connection & disconnection mode
+* Options of modal \[v0.0.12]
 {% endstep %}
 {% endstepper %}
