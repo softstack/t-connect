@@ -44,24 +44,28 @@ appUrl: string;
 ```
 
 ```typescript
-// Optional URL for a generic wallet connection
-genericWalletUrl?: string;
-```
-
-```typescript
-// Optional array to specify which networks to filter or allow.
-networkFilter?: Array<'etherlink' | 'tezos'>;
-```
-
-```typescript
 // Optional ReactNode to be rendered as the content of the provider.
 children?: ReactNode | undefined; 
 ```
 
 ```typescript
-// Optional callback triggered when an error occurs.
-// Receives the error object as an argument.
-onError?: (error: unknown) => void;
+// Optional URL for the application icon
+appIcon?: string;
+```
+
+```typescript
+// Optional array to specify which networks to filter or allow
+networkFilter?: Array<'etherlink' | 'tezos'>;
+```
+
+```typescript
+// Optional configuration for the Tezos Beacon network
+tezosBeaconNetwork?: TezosBeaconNetwork;
+```
+
+```typescript
+// Optional configuration for the Tezos WalletConnect network
+tezosWcNetwork?: TezosWcNetwork;
 ```
 
 ### The TConnectModal Hook
