@@ -162,6 +162,8 @@ After selecting the Blockchain, the user is prompted to choose a wallet. The lis
 #### Wallet Connection Execution
 
 Once a wallet is selected, the user is redirected to the wallet and prompted to authorize the connection.
+
+<img src="../../.gitbook/assets/Screenshot 2024-12-04 at 08.58.20.png" alt="" data-size="original">
 {% endstep %}
 
 {% step %}
@@ -174,5 +176,7 @@ After a successful connection, the modal closes, and the developer get the provi
 #### Disconnection
 
 If  connection is established, you can open the modal and disconnect&#x20;
+
+<img src="../../.gitbook/assets/Screenshot 2024-12-04 at 09.00.05.png" alt="" data-size="original">
 {% endstep %}
 {% endstepper %}
