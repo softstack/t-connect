@@ -17,7 +17,7 @@ icon: square-code
 
 ### The TConnectModalProvider
 
-The TConnectModalProvider has six options:
+The TConnectModalProvider has eight properties:
 
 ```typescript
 // API-key to get access to our service
@@ -44,27 +44,25 @@ appUrl: string;
 ```
 
 ```typescript
-// Optional ReactNode to be rendered as the content of the provider.
-children?: ReactNode | undefined; 
-```
-
-```typescript
 // Optional URL for the application icon
 appIcon?: string;
 ```
 
 ```typescript
 // Optional array to specify which networks to filter or allow
+// Default: etherlink and tezos 
 networkFilter?: Array<'etherlink' | 'tezos'>;
 ```
 
 ```typescript
 // Optional configuration for the Tezos Beacon network
+// Default: Mainnet
 tezosBeaconNetwork?: TezosBeaconNetwork;
 ```
 
 ```typescript
 // Optional configuration for the Tezos WalletConnect network
+// Default: Mainnet
 tezosWcNetwork?: TezosWcNetwork;
 ```
 
@@ -102,20 +100,25 @@ npm install @tconnect.io/modal
 {% step %}
 #### Setup the Modal Provider
 
-We recommend first providing the TConnectModalProvider, for example in `Layout.tsx.`&#x20;
+We recommend first providing the TConnectModalProvider, for example in `App.tsx.`&#x20;
 
 ```typescript
-import { TConnectModalProvider } from '@tconnect.io/modal';
-import { App } from './pages/App';
+import { TConnectModalProvider } from "@tconnect.io/modal";
+import { MyComponent } from "./MyComponent";
 
-<TConnectModalProvider
-          appName={"Example App"}
-          appUrl={"https://your-domain.io"}
-          bridgeUrl={"https://tconnect.io"}
-          apiKey={"PRIVATE_API_KEY"}
-        >
-    <App/>    
-</TConnectModalProvider>
+export default function App() {
+  return (
+    <TConnectModalProvider
+      appName={"Example App"}
+      appUrl={"https://your-domain.io"}
+      bridgeUrl={"https://tconnect.io"}
+      apiKey={"PRIVATE_API_KEY"}
+    >
+      <MyComponent />
+    </TConnectModalProvider>
+  );
+}
+
 ```
 {% endstep %}
 
@@ -125,16 +128,13 @@ import { App } from './pages/App';
 Now, within the provider, in this example in the `App` component, the `openModal` method can be called to display the modal for wallet selection.
 
 ```typescript
-import { useTConnectModal } from '@tconnect.io/modal';
+import { useTConnectModal } from "@tconnect.io/modal";
 
-export const App = () => {
-	const tConnect = useTConnectModal();
-	return (
-	<button onClick={tConnect.openModal}>open modal</button>
-	);
+export const MyComponent = () => {
+  const tConnect = useTConnectModal();
+  return <button onClick={tConnect.openModal}>open modal</button>;
 };
 
-App.displayName = 'App';
 ```
 {% endstep %}
 {% endstepper %}
@@ -145,7 +145,7 @@ App.displayName = 'App';
 {% step %}
 #### Blockchain  Selection
 
-The modal first provides the option to choose the blockchain  to be used. The user can select between Tezos or Etherlink.
+The modal first provides the option to choose the blockchain  to be used. The user can select between Tezos and Etherlink.
 
 <img src="../../.gitbook/assets/Screenshot 2024-11-05 at 09.24.27.png" alt="" data-size="original">
 {% endstep %}
@@ -169,13 +169,13 @@ Once a wallet is selected, the user is redirected to the wallet and prompted to 
 {% step %}
 #### Connection Established
 
-After a successful connection, the modal closes, and the developer get the provider from the Modal Hook.&#x20;
+After a successful connection, the modal closes, and the developer gets the provider from the modal hook.&#x20;
 {% endstep %}
 
 {% step %}
 #### Disconnection
 
-If  connection is established, you can open the modal and disconnect&#x20;
+If connection is established, you can open the modal and disconnect.&#x20;
 
 <img src="../../.gitbook/assets/Screenshot 2024-12-04 at 09.00.05.png" alt="" data-size="original">
 {% endstep %}
