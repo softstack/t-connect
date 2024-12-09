@@ -12,7 +12,7 @@
 
 * [Installation](getting-started/installation.md)
 * [Implementation Guide](getting-started/implementation-guide/README.md)
-  * [Modal](getting-started/implementation-guide/modal.md)
+  * [React-Modal](getting-started/implementation-guide/react-modal.md)
   * [Providers](getting-started/implementation-guide/providers.md)
 * [Proof of Concept](getting-started/proof-of-concept/README.md)
   * [How to Deploy](getting-started/proof-of-concept/how-to-deploy.md)
