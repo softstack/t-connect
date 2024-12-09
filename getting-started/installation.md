@@ -14,29 +14,43 @@ icon: folder-gear
 
 The t:connect SDK offers a react-modal and provider. The provider and the modal can be loaded separately as needed.
 
-#### Install the Modal
+{% tabs %}
+{% tab title="React-Modal" %}
+Install the React-Modal
+
+The react-modal is supplied as a complete package and includes the required providers
 
 ```typescript
 npm install @tconnect.io/modal
 ```
+{% endtab %}
 
-#### Install the Evm Provider
+{% tab title="Evm-Provider" %}
+Install the Evm Provider
 
 ```typescript
 npm install @tconnect.io/evm-provider
 ```
+{% endtab %}
 
-#### Install the Tezos Beacon Provider
+{% tab title="Tezos Beacon Provider" %}
+Install the Tezos Beacon Provider
 
 ```typescript
 npm install @tconnect.io/tezos-beacon-provider
 ```
+{% endtab %}
 
-#### Install the Tezos Wallet Connect Provider
+{% tab title="Tezos Wallet Connect Provider" %}
+Install the Tezos Wallet Connect Provider
 
 ```typescript
 npm install @tconnect.io/tezos-wc-provider
 ```
+{% endtab %}
+{% endtabs %}
+
+
 
 ### Get an API Key
 
