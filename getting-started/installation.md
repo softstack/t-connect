@@ -25,7 +25,7 @@ npm install @tconnect.io/modal
 ```
 {% endtab %}
 
-{% tab title="Evm-Provider" %}
+{% tab title="Evm Provider" %}
 Install the Evm Provider
 
 ```typescript
@@ -49,8 +49,6 @@ npm install @tconnect.io/tezos-wc-provider
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 ### Get an API Key
 
