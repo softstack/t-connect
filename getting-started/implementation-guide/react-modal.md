@@ -151,7 +151,7 @@ export const MyComponent = () => {
 
 The modal first provides the option to choose the blockchain  to be used. The user can select between Tezos and Etherlink.
 
-<img src="../../.gitbook/assets/Screenshot 2024-11-05 at 09.24.27.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/f955b3ad-9c58-48ad-a3ad-f9d61b34f2bf.png" alt="" data-size="original">
 {% endstep %}
 
 {% step %}
@@ -159,7 +159,7 @@ The modal first provides the option to choose the blockchain  to be used. The us
 
 After selecting the Blockchain, the user is prompted to choose a wallet. The list of available wallets is automatically filtered based on the previously chosen blockchain.
 
-<img src="../../.gitbook/assets/Screenshot 2024-11-05 at 09.24.46.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/ea3c818a-1cde-44bc-b36c-d5cf367f0d8d.png" alt="" data-size="original">
 {% endstep %}
 
 {% step %}
@@ -167,7 +167,7 @@ After selecting the Blockchain, the user is prompted to choose a wallet. The lis
 
 Once a wallet is selected, the user is redirected to the wallet and prompted to authorize the connection.
 
-<img src="../../.gitbook/assets/Screenshot 2024-12-04 at 08.58.20.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/9eba4224-f1de-447d-bbc2-83182273e3cb.png" alt="" data-size="original">
 {% endstep %}
 
 {% step %}
@@ -181,6 +181,6 @@ After a successful connection, the modal closes, and the developer gets the prov
 
 If connection is established, you can open the modal and disconnect.&#x20;
 
-<img src="../../.gitbook/assets/Screenshot 2024-12-04 at 09.00.05.png" alt="" data-size="original">
+<img src="../../.gitbook/assets/f8a6b31c-c65c-4076-866f-b0e902af3e4b.png" alt="" data-size="original">
 {% endstep %}
 {% endstepper %}
