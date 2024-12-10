@@ -10,32 +10,48 @@ TConnect offers three providers. For Etherlink, you must use the `TConnectEvmPro
 
 ### &#x20;Configure TConnectEvmProvider
 
-```typescript
-// Import provider
-import { EvmWalletApp, TConnectEvmProvider } from '@tconnect.io/evm-provider';
+The `TConnectEvmProvider` class is a provider implementation that requires specific configuration options passed to its constructor during instantiation. These options are provided as an object of type `TConnectEvmProviderOptions`.
 
-const app: EvmWalletApp = 'metaMask';
-// Initialize provider
-const provider = new TConnectEvmProvider({
-                appName: "Example App",
-                appUrl: "https://your-domain.io",
-                bridgeUrl: "https://tconnect.io",
-                apiKey: "PRIVATE_API_KEY",
-                walletApp: app,
-  });
- // Connect to wallet
- await provider.connect();
+```typescript
+// Interface definition for TConnectEvmProviderOptions
+interface TConnectEvmProviderOptions {
+  // The name of your application.
+  appName: string;
+  // The URL linking to your application's website or homepage.
+  appUrl: string;
+  // (Optional) A URL pointing to an icon that represents your application.
+  appIcon?: string;
+  // The URL of the bridge server used for communication.
+  bridgeUrl: string;
+  // The API key required for authentication and access to the provider's services.
+  apiKey: string;
+  // (Optional) The wallet application, represented by the `EvmWalletApp` type.
+  walletApp?: EvmWalletApp;
+}
 ```
 
 ```typescript
-TConnectEvmProviderOptions { 
-                appName: string;
-                appUrl: string;
-                appIcon?: string;
-                bridgeUrl: string;
-                apiKey: string;
-                walletApp?: EvmWalletApp;
-    }
+// Import provider
+import { EvmWalletApp, TConnectEvmProvider } from "@tconnect.io/evm-provider";
+
+const app: EvmWalletApp = "metaMask";
+// Initialize provider
+const provider = new TConnectEvmProvider({
+  appName: "Example App",
+  appUrl: "https://your-domain.io",
+  bridgeUrl: "https://tconnect.io",
+  apiKey: "PRIVATE_API_KEY",
+  walletApp: app,
+});
+
+async function myAsyncFunction() {
+  try {
+    // Connect to wallet
+    await provider.connect();
+  } catch (error) {
+    console.error("Error connecting to wallet:", error);
+  }
+}
 ```
 
 ### Configure TConnectWcProvider
