@@ -6,7 +6,7 @@ icon: file-lines
 
 ## About t:connect
 
-**t:connect** is a Telegram Mini App Software Development Kit (SDK) developed by Softstack. It bridges Telegram Mini Apps with the Tezos and Etherlink ecosystems, enabling seamless integration of blockchain functionalities directly within Telegram. With t:connect, developers can build Mini Apps that perform blockchain transactions, manage digital wallets, and interact with smart contracts, all within the familiar environment of Telegram.
+**t:connect** is a Telegram Mini App Software Development Kit (SDK) developed by Softstack. It bridges Telegram Mini Apps with the Tezos and Etherlink ecosystems, enabling seamless integration of blockchain functionalities directly within Telegram. With t:connect, developers can build Mini Apps that perform blockchain transactions and interact with smart contracts, all within the familiar environment of Telegram.
 
 For those interested in exploring the underlying blockchain technologies, you can find more information at:
 
@@ -36,7 +36,7 @@ For developers looking to build with t:connect, here are the key technical speci
 * Digital Art and NFTs
 * Smart Contract Development
 
-#### Etherlink is an EVM-compatible sidechain of Tezos, allowing seamless integration of Ethereum-based functionalities within the Tezos ecosystem. Benefits include:
+#### Etherlink is an Ethereum-compatible sidechain of Tezos, allowing seamless integration of Ethereum-based functionalities within the Tezos ecosystem. Benefits include:
 
 * Scalability: Higher transaction throughput and lower fees.
 * Compatibility: Leverage Ethereum tools and smart contracts on Tezos.
