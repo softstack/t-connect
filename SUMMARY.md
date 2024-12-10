@@ -15,6 +15,7 @@
   * [React-Modal](getting-started/implementation-guide/react-modal.md)
   * [Providers](getting-started/implementation-guide/providers/README.md)
     * [TConnectEvmProvider](getting-started/implementation-guide/providers/tconnectevmprovider.md)
+    * [TConnectTezosWcProvider](getting-started/implementation-guide/providers/tconnecttezoswcprovider.md)
 * [Proof of Concept](getting-started/proof-of-concept/README.md)
   * [How to Deploy](getting-started/proof-of-concept/how-to-deploy.md)
   * [Sample App](getting-started/proof-of-concept/sample-app.md)
