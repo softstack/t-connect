@@ -6,26 +6,53 @@ The `TConnectEvmProvider` allows establishing a connection to an Etherlink walle
 
 ```typescript
 // Import provider
-import { TConnectEvmProvider } from '@tconnect.io/evm-provider';
+import { TConnectEvmProvider } from "@tconnect.io/evm-provider";
 
-// Initialize provider
-const provider = new TConnectEvmProvider({
-  appName: "Example App",
-  appUrl: "https://your-domain.io",
-  bridgeUrl: "https://tconnect.io",
-  apiKey: "PRIVATE_API_KEY",
-});
+import { useCallback, useState } from "react";
 
-// Listen for 'connectionString' event
-provider.on("connectionString", (connectionString) => {
-  console.log(connectionString);
-});
+function MyComponent() {
+  // Define state for connection string
+  const [connectionString, setConnectionString] = useState("");
+
+  // Define connect function
+  const connect = useCallback(async () => {
+    try {
+      // Initialize provider
+      const provider = new TConnectEvmProvider({
+        appName: "Example App",
+        appUrl: "https://your-domain.io",
+        bridgeUrl: "https://tconnect.io",
+        apiKey: "PRIVATE_API_KEY",
+      });
+
+      // Listen for 'connectionString' event
+      provider.on("connectionString", (connectionString) => {
+        console.log(connectionString);
+        setConnectionString(connectionString);
+      });
+
+      // Connect to provider
+      await provider.connect();
+    } catch (err) {
+      console.log(err);
+    }
+  }, []);
+
+  // Render component
+  return (
+    <div className="MyComponent">
+      <p>Connection String: {connectionString}</p>
+      <button onClick={connect}> get connection string</button>
+    </div>
+  );
+}
+
+export default MyComponent;
 ```
 
 ### **Explanation**
 
 * **Initialization**: The `TConnectEvmProvider` is initialized with basic configuration options such as `appName`, `appUrl`, `bridgeUrl`, and `apiKey`.
 * **Handling the Connection String**: Using the `on("connectionString")` method, developers can access the `connectionString` to use it as needed.
-* **Flexibility**: The `connectionString` can be utilized when the `walletApp` parameter is omitted, enabling dynamic and automated wallet connections.
 
 This functionality is not limited to the `TConnectEvmProvider` but is applicable to all providers offered by `TConnect`.
