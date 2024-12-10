@@ -28,7 +28,7 @@ interface TConnectEvmProviderOptions {
 
 The `walletApp` parameter is optional and specifies the wallet application the user intends to connect to. This parameter uses the `EvmWalletApp` type, which represents supported wallet applications. Providing this parameter allows the provider to optimize and streamline the connection process for the specified wallet.
 
-If the `walletApp` parameter is omitted, the provider will attempt to connect to any available wallet. In such cases, the connection is established via a connection string  provided by the bridge. _(_[_See more details here._](./#connect-via-connection-string)_)_
+If the `walletApp` parameter is omitted, the provider will attempt to connect to any available wallet. In such cases, the connection is established via a connection string  provided by the bridge. _(_[_See more details here_](connect-via-connection-string.md)_.)_
 
 ### Example of initializing the TConnectEvmProvider
 
