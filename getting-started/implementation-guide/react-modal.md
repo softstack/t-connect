@@ -33,6 +33,10 @@ Wondering how to obatin an api key? see: [Broken link](broken-reference "mention
 bridgeUrl: string;
 ```
 
+{% hint style="info" %}
+Note that the `bridgeUrl`parameter must always be set to `"https://tconnect.io"`, as this is the hosted location of the bridge.
+{% endhint %}
+
 ```typescript
 // Name of your application
 appName: string;
