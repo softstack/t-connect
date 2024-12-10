@@ -104,7 +104,7 @@ npm install @tconnect.io/modal
 {% step %}
 #### Setup the React-Modal Provider
 
-We recommend first providing the TConnectModalProvider, for example in `App.tsx.`&#x20;
+We recommend first providing the TConnectModalProvider.
 
 ```typescript
 import { TConnectModalProvider } from "@tconnect.io/modal";
@@ -129,7 +129,7 @@ export default function App() {
 {% step %}
 #### Display the Wallet Connection React-Modal
 
-Now, within the provider, in this example in the `App` component, the `openModal` method can be called to display the modal for wallet selection.
+Now, within the provider, in this example in `MyComponent` component, the `openModal` method can be called to display the modal for wallet selection.
 
 ```typescript
 import { useTConnectModal } from "@tconnect.io/modal";

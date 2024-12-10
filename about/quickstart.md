@@ -50,4 +50,41 @@ A Beacon wallet provider for Tezos ecosystem integrations.
 {% endtab %}
 {% endtabs %}
 
-In our Quickstart documentation, we'll focus on demonstrating the EVM provider as an introductory example. However, our comprehensive documentation will provide in-depth guidance for each package, ensuring developers can leverage the full potential of each component according to their specific project requirements.
+In our Quickstart documentation, we'll focus on demonstrating the usage of the react-modal as an introductory example. However, our comprehensive documentation will provide in-depth guidance for each package, ensuring developers can leverage the full potential of each component according to their specific project requirements.
+
+#### Setup the React-Modal Provider
+
+We recommend first providing the TConnectModalProvider.
+
+```typescript
+import { TConnectModalProvider } from "@tconnect.io/modal";
+import { MyComponent } from "./MyComponent";
+
+export default function App() {
+  return (
+    <TConnectModalProvider
+      appName={"Example App"}
+      appUrl={"https://your-domain.io"}
+      bridgeUrl={"https://tconnect.io"}
+      apiKey={"PRIVATE_API_KEY"}
+    >
+      <MyComponent />
+    </TConnectModalProvider>
+  );
+}
+
+```
+
+#### Display the Wallet Connection React-Modal
+
+Now, within the provider, in this example in `MyComponent` component, the `openModal` method can be called to display the modal for wallet selection.
+
+```typescript
+import { useTConnectModal } from "@tconnect.io/modal";
+
+export const MyComponent = () => {
+  const tConnect = useTConnectModal();
+  return <button onClick={tConnect.openModal}>open modal</button>;
+};
+
+```
