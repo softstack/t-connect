@@ -45,3 +45,12 @@ A: Ensure all prerequisites are met and consult the documentation. If issues per
 If you're using Next.js and have problems loading the modal's images, make sure to update your `next.config.js` to properly handle image assets. Specifically, add custom Webpack rules to process SVG and PNG files as `asset/resource`and ensure the correct `publicPath` and `outputPath` are set. This helps Next.js locate the images correctly and avoids caching issues or incorrect paths.
 
 </details>
+
+<details>
+
+<summary>Q5: Webpack is missing a module?</summary>
+
+Starting with Webpack 5, automatic support for Node.js core modules like `buffer` or `stream` was removed. This change was made because these modules are often not needed in browser environments. Instead, developers need to manually configure polyfills for these modules. This approach helps reduce bundle size and better aligns with modern web standards.
+
+</details>
+
