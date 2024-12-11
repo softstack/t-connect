@@ -18,6 +18,7 @@
     * [TConnectTezosWcProvider](getting-started/implementation-guide/providers/tconnecttezoswcprovider.md)
     * [TConnectTezosBeaconProvider](getting-started/implementation-guide/providers/tconnecttezosbeaconprovider.md)
     * [Connect via connection string](getting-started/implementation-guide/providers/connect-via-connection-string.md)
+  * [Unity](getting-started/implementation-guide/unity.md)
 * [Proof of Concept](getting-started/proof-of-concept/README.md)
   * [How to Deploy](getting-started/proof-of-concept/how-to-deploy.md)
   * [Sample App](getting-started/proof-of-concept/sample-app.md)
