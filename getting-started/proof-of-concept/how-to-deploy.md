@@ -45,6 +45,8 @@ npm install
 
 ```typescript
 MONGO_URI = "YOUR_MONOGODB_CONNECTION_STRING"
+NEXT_PUBLIC_BRIDGE_URL="https://tconnect.io"
+NEXT_PUBLIC_TCONNECT_API_KEY="PRIVATE_API_KEY"
 ```
 
 ### Run the backend-server
