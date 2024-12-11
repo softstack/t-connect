@@ -39,4 +39,18 @@ Added:&#x20;
 * Screenshots of Modal in connection & disconnection mode
 * Options of modal \[v0.0.12]
 {% endstep %}
+
+{% step %}
+\[v0.0.4] - 2024-12-11
+
+Added:&#x20;
+
+* Unity documentation&#x20;
+
+Refactored:&#x20;
+
+* Providers pages
+
+
+{% endstep %}
 {% endstepper %}
