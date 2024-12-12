@@ -56,35 +56,44 @@ In our Quickstart documentation, we'll focus on demonstrating the usage of the r
 
 We recommend first providing the TConnectModalProvider.
 
-```typescript
-import { TConnectModalProvider } from "@tconnect.io/modal";
+<pre class="language-typescript"><code class="lang-typescript"><strong>// Import the TConnectModalProvider component for managing the TConnect modal
+</strong>import { TConnectModalProvider } from "@tconnect.io/modal";
+// Import the custom component to be rendered within the modal provider
 import { MyComponent } from "./MyComponent";
 
 export default function App() {
   return (
-    <TConnectModalProvider
-      appName={"Example App"}
-      appUrl={"https://your-domain.io"}
-      bridgeUrl={"https://tconnect.io"}
-      apiKey={"PRIVATE_API_KEY"}
+    // Wrap the application with TConnectModalProvider to configure and
+    // enable the TConnect modal
+    &#x3C;TConnectModalProvider
+      appName={"Example App"} // Name of the application
+      appUrl={"https://your-domain.io"} // URL of the application
+      bridgeUrl={"https://tconnect.io"} // Bridge URL for the TConnect service
+      apiKey={"PRIVATE_API_KEY"} // API key for authenticating with TConnect
     >
-      <MyComponent />
-    </TConnectModalProvider>
+      // Render the custom component within the TConnect provider
+      &#x3C;MyComponent />
+    &#x3C;/TConnectModalProvider>
   );
 }
-
-```
+</code></pre>
 
 #### Display the Wallet Connection React-Modal
 
 Now, within the provider, in this example in `MyComponent` component, the `openModal` method can be called to display the modal for wallet selection.
 
 ```typescript
+// Import the useTConnectModal hook to interact with the TConnect modal
 import { useTConnectModal } from "@tconnect.io/modal";
 
+// Define a functional React component named MyComponent
 export const MyComponent = () => {
+  // Initialize the TConnect modal functionality using the custom hook
   const tConnect = useTConnectModal();
-  return <button onClick={tConnect.openModal}>open modal</button>;
-};
 
+  return (
+    // Render a button that triggers the TConnect modal when clicked
+    <button onClick={tConnect.openModal}>open modal</button>
+  );
+};
 ```

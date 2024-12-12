@@ -178,35 +178,54 @@ export const useUnityCommunicator = (
 2. **Initializing Communication:** The `useUnityCommunicator` hook is used to set up communication between Unity and React.
 
 ```typescript
-import React, { useEffect } from 'react';
-import { useUnityCommunicator } from './useUnityCommunicator';
-import Unity, { UnityContext } from 'react-unity-webgl';
+// Import React's useEffect hook for side effects
+import { useEffect } from 'react';
+// Import Unity and hooks for integrating Unity with React
+import { Unity, useUnityContext } from 'react-unity-webgl';
+// Import a custom hook for communication between React and Unity
+import { useUnityCommunicator } from './utils/UnityCommunicator';
 
-const UnityGame = () => {
-    const unityContext = new UnityContext({
-        loaderUrl: '/path-to-unity-build/Build/loader.js',
-        dataUrl: '/path-to-unity-build/Build/data.data',
-        frameworkUrl: '/path-to-unity-build/Build/framework.js',
-        codeUrl: '/path-to-unity-build/Build/code.wasm',
-    });
-    onst { setupUnityCommunication } = useUnityCommunicator(sendMessage);
+function App() {
+	// Extract Unity context details using the useUnityContext hook
+	const {
+		unityProvider, // Provides the Unity instance to be rendered
+		sendMessage, // Sends messages from React to Unity
+		isLoaded, // Indicates whether the Unity instance has finished loading
+		loadingProgression, // Tracks the Unity loading progression 
+	} = useUnityContext({
+		loaderUrl: 'UnityIntegrationBuild/Build/UnityIntegrationBuild.loader.js',
+		dataUrl: 'UnityIntegrationBuild/Build/UnityIntegrationBuild.data',
+		frameworkUrl: 'UnityIntegrationBuild/Build/UnityIntegrationBuild.framework.js',
+		codeUrl: 'UnityIntegrationBuild/Build/UnityIntegrationBuild.wasm',
+	});
 
-    useEffect(() => {
-        setupUnityCommunication();
-    }, [setupUnityCommunication]);
+	// Use the custom hook to set up Unity
+	// communication and manage wallet address state
+	const { setupUnityCommunication, address } = useUnityCommunicator(sendMessage);
 
-    return (
-	<div className="text-center">
-		<h1 className="text-4xl font-bold mb-4">Unity React Integration</h1>
-		<div className="mx-auto" style={{ width: 350, height: 600 }}>
-		    <Unity unityProvider={unityProvider} 
-		    style={{ width: '100%', height: '100%' }} />
+	// Initialize Unity communication when the component mounts
+	useEffect(() => {
+		setupUnityCommunication();
+	}, [setupUnityCommunication]);
+
+	return (
+		// Render the main application UI
+		<div className="text-center">
+			{/* Title of the application */}
+			<h1 className="text-4xl font-bold mb-4">Unity React Integration</h1>
+			{/* Display loading progress if Unity is not yet loaded */}
+			{!isLoaded && <p className="text-lg">loading {Math.floor(loadingProgression * 100)}%</p>}
+			{/* Render the Unity instance with specific dimensions */}
+			<div className="mx-auto" style={{ width: 350, height: 600 }}>
+				<Unity unityProvider={unityProvider} 
+				style={{ width: '100%', height: '100%' }} />
+			</div>
 		</div>
-	</div>
-    );
-};
+	);
+}
 
-export default UnityGame;
+export default App;
+
 ```
 
 ### Conclusion <a href="#conclusion" id="conclusion"></a>

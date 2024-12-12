@@ -107,22 +107,26 @@ npm install @tconnect.io/modal
 We recommend first providing the TConnectModalProvider.
 
 ```typescript
+// Import the TConnectModalProvider component for managing the TConnect modal
 import { TConnectModalProvider } from "@tconnect.io/modal";
+// Import the custom component to be rendered within the modal provider
 import { MyComponent } from "./MyComponent";
 
 export default function App() {
   return (
+    // Wrap the application with TConnectModalProvider to configure and
+    // enable the TConnect modal
     <TConnectModalProvider
-      appName={"Example App"}
-      appUrl={"https://your-domain.io"}
-      bridgeUrl={"https://tconnect.io"}
-      apiKey={"PRIVATE_API_KEY"}
+      appName={"Example App"} // Name of the application
+      appUrl={"https://your-domain.io"} // URL of the application
+      bridgeUrl={"https://tconnect.io"} // Bridge URL for the TConnect service
+      apiKey={"PRIVATE_API_KEY"} // API key for authenticating with TConnect
     >
+      // Render the custom component within the TConnect provider
       <MyComponent />
     </TConnectModalProvider>
   );
 }
-
 ```
 {% endstep %}
 
@@ -132,13 +136,18 @@ export default function App() {
 Now, within the provider, in this example in `MyComponent` component, the `openModal` method can be called to display the modal for wallet selection.
 
 ```typescript
+// Import the useTConnectModal hook to interact with the TConnect modal
 import { useTConnectModal } from "@tconnect.io/modal";
 
+// Define a functional React component named MyComponent
 export const MyComponent = () => {
+  // Initialize the TConnect modal functionality using the custom hook
   const tConnect = useTConnectModal();
-  return <button onClick={tConnect.openModal}>open modal</button>;
+  return (
+    // Render a button that triggers the TConnect modal when clicked
+    <button onClick={tConnect.openModal}>open modal</button>
+  );
 };
-
 ```
 {% endstep %}
 {% endstepper %}

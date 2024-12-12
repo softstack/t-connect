@@ -31,7 +31,7 @@ function MyComponent() {
         setConnectionString(connectionString);
       });
 
-      // Connect to provider
+      // Connect to wallet
       await provider.connect();
     } catch (err) {
       console.log(err);
