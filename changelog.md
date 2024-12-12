@@ -53,4 +53,12 @@ Refactored:&#x20;
 
 
 {% endstep %}
+
+{% step %}
+\[v0.0.5 ] - 2024-12-12
+
+Added:&#x20;
+
+* inline code comments&#x20;
+{% endstep %}
 {% endstepper %}
