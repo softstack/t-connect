@@ -12,4 +12,4 @@ t:connect supports a variety of wallets for both Tezos and Etherlink ecosystems.
 
 ### Supported wallets by Etherlink
 
-Bitget-Wallet, Safepal, Rainbow, TrustWallet & MetaMask
+Bitget-Wallet, Safepal, TrustWallet & MetaMask.
