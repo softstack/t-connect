@@ -60,13 +60,13 @@ networkFilter?: Array<'etherlink' | 'tezos'>;
 
 ```typescript
 // Optional configuration for the Tezos Beacon network
-// Default: Mainnet
+// Default: Testnet
 tezosBeaconNetwork?: TezosBeaconNetwork;
 ```
 
 ```typescript
 // Optional configuration for the Tezos WalletConnect network
-// Default: Mainnet
+// Default: Testnet
 tezosWcNetwork?: TezosWcNetwork;
 ```
 
