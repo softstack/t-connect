@@ -36,7 +36,7 @@ Install the Tezos Beacon Provider
 npm install @tconnect.io/tezos-beacon-provider
 ```
 
-A Wallet Connect provider specifically optimized for Tezos blockchain connections.
+A Beacon wallet provider for Tezos ecosystem integrations.
 {% endtab %}
 
 {% tab title="Tezos Wallet Connect Provider" %}
@@ -46,7 +46,7 @@ Install the Tezos Wallet Connect Provider
 npm install @tconnect.io/tezos-wc-provider
 ```
 
-A Beacon wallet provider for Tezos ecosystem integrations.
+A Wallet Connect provider specifically optimized for Tezos blockchain connections.
 {% endtab %}
 {% endtabs %}
 

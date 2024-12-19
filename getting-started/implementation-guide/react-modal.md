@@ -60,14 +60,20 @@ networkFilter?: Array<'etherlink' | 'tezos'>;
 
 ```typescript
 // Optional configuration for the Tezos Beacon network
-// Default: Testnet
+// Default: Ghostnet
 tezosBeaconNetwork?: TezosBeaconNetwork;
 ```
 
 ```typescript
 // Optional configuration for the Tezos WalletConnect network
-// Default: Testnet
+// Default: Ghostnet
 tezosWcNetwork?: TezosWcNetwork;
+```
+
+```typescript
+// Optional configuration for the Tezos WalletConnect network
+// Default: Testnet
+evmNetwork?: EvmNetworkType;
 ```
 
 ### The TConnectModal Hook
@@ -176,7 +182,7 @@ After selecting the Blockchain, the user is prompted to choose a wallet. The lis
 
 Once a wallet is selected, the user is redirected to the wallet and prompted to authorize the connection.
 
-<img src="../../.gitbook/assets/9eba4224-f1de-447d-bbc2-83182273e3cb.png" alt="" data-size="original">
+<div align="left"><figure><img src="../../.gitbook/assets/Screenshot 2024-12-19 at 09.51.26.png" alt="" width="303"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
