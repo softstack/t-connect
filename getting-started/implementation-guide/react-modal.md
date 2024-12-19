@@ -82,7 +82,7 @@ etherlinkNetwork?: EtherlinkNetworkType;
 // function to open the modal
 openModal: () => void;
 
-// function to clode the modal
+// function to close the modal
 closeModal: () => void;
 
 // the etherlink Provider

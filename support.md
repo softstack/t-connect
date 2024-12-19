@@ -7,7 +7,8 @@ icon: message-question
 Contact Support
 
 Email: [hello@softstack.io](mailto:hello@softstack.io)\
-Telegram: [@yannikheinze](https://t.me/yannikheinze)
+Telegram: [@yannikheinze](https://t.me/yannikheinze)\
+Open Issue on GitHub: [https://github.com/softstack/telegram-mini-app-sdk/issues/new](https://github.com/softstack/telegram-mini-app-sdk/issues/new)
 
 \
 Request API key:  [https://swfe3fmu6fc.typeform.com/to/qP56yNc5](https://swfe3fmu6fc.typeform.com/to/qP56yNc5)
