@@ -14,7 +14,7 @@
 * [Implementation Guide](getting-started/implementation-guide/README.md)
   * [React-Modal](getting-started/implementation-guide/react-modal.md)
   * [Providers](getting-started/implementation-guide/providers/README.md)
-    * [TConnectEvmProvider](getting-started/implementation-guide/providers/tconnectevmprovider.md)
+    * [TConnectEtherlinkProvider](getting-started/implementation-guide/providers/tconnectetherlinkprovider.md)
     * [TConnectTezosWcProvider](getting-started/implementation-guide/providers/tconnecttezoswcprovider.md)
     * [TConnectTezosBeaconProvider](getting-started/implementation-guide/providers/tconnecttezosbeaconprovider.md)
     * [Connect via connection string](getting-started/implementation-guide/providers/connect-via-connection-string.md)

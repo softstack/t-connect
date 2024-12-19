@@ -73,7 +73,7 @@ tezosWcNetwork?: TezosWcNetwork;
 ```typescript
 // Optional configuration for the Tezos WalletConnect network
 // Default: Testnet
-evmNetwork?: EvmNetworkType;
+etherlinkNetwork?: EtherlinkNetworkType;
 ```
 
 ### The TConnectModal Hook
@@ -85,8 +85,8 @@ openModal: () => void;
 // function to clode the modal
 closeModal: () => void;
 
-// the evm Provider
-evmProvider: TConnectEvmProvider | undefined;
+// the etherlink Provider
+etherlinkProvider: TConnectEtherlinkProvider | undefined;
 
 // the tezos-beacon Provider
 tezosBeaconProvider: TConnectTezosBeaconProvider | undefined;
