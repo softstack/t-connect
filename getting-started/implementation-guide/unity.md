@@ -6,7 +6,7 @@ icon: play
 
 ## Integration of Unity WebGL with the tconnect.io sdk <a href="#integration-of-unity-webgl-with-the-tconnect.io-sdk" id="integration-of-unity-webgl-with-the-tconnect.io-sdk"></a>
 
-This section of the documentation describes the integration of Unity WebGL applications with the tconnect.io SDK. The goal is to enable communication between a Unity WebGL application and a React application utilizing the tconnect.io sdk.
+This section of the documentation describes the integration of Unity WebGL applications with the tconnect.io SDK. The goal is to enable communication between a Unity WebGL application and a React application utilizing the tconnect.io SDK.
 
 #### Overview <a href="#overview" id="overview"></a>
 
@@ -159,7 +159,7 @@ export const useUnityCommunicator = (
 				console.error(error || 'React: Error sending data to Unity');
 			}
 		};
-	}, [openModal, getAddressEvm, getAddress, sendMessage,
+	}, [openModal, getAddressEtherlink, getAddress, sendMessage,
 		etherlinkProvider, tezosBeaconProvider, tezosWcProvider]);
 
 	// Return the `setupUnityCommunication` function and the wallet address state
