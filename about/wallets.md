@@ -16,9 +16,7 @@ The latest version of the altme app causes errors in some cases
 
 ### Supported wallets by Etherlink
 
-Bitget-Wallet, Safepal, TrustWallet & MetaMask.\
-\
-
+Bitget-Wallet, Safepal, TrustWallet & MetaMask.
 
 {% hint style="info" %}
 If you're missing a Wallet in our list, please request via [Support](../support.md) or [GitHub issue](https://github.com/softstack/telegram-mini-app-sdk/issues/new)
