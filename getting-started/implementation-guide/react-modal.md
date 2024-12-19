@@ -72,7 +72,7 @@ tezosWcNetwork?: TezosWcNetwork;
 
 ```typescript
 // Optional configuration for the Tezos WalletConnect network
-// Default: Testnet
+// Default: Ghostnet
 etherlinkNetwork?: EtherlinkNetworkType;
 ```
 
