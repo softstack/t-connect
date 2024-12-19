@@ -61,4 +61,13 @@ Added:&#x20;
 
 * inline code comments&#x20;
 {% endstep %}
+
+{% step %}
+\[v0.0.6] - 2024-12-12
+
+Refactored:&#x20;
+
+* Change Evm -> Etherlink
+* use @tconnect.io/modal@0.0.24
+{% endstep %}
 {% endstepper %}
