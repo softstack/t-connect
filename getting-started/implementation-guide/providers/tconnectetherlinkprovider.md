@@ -22,7 +22,7 @@ interface TConnectEtherlinkProviderOptions {
   // The Network you will connected to
   // Default: Ghostnet
   network: EtherlinkNetwork;
-  // (Optional) The wallet application, represented by the `EvmWalletApp` type.
+  // (Optional) The wallet application, represented by the `EtherlinkWalletApp` type.
   walletApp?: EtherlinkWalletApp;
 }
 ```
