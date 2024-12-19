@@ -97,18 +97,18 @@ export const useUnityCommunicator = (
 	const [address, setAddress] = useState<string | undefined>();
 
 	// Get modal functionality and wallet providers from TConnect
-	const { openModal, evmProvider, tezosBeaconProvider, tezosWcProvider } 
+	const { openModal, etherlinkProvider, tezosBeaconProvider, tezosWcProvider } 
 	= useTConnectModal();
 
 	// Function to retrieve the user's Etherlink address
-	const getAddressEvm = useCallback(async () => {
-		if (!evmProvider) return;
-		const web3 = new Web3(evmProvider);
+	const getAddressEtherlink = useCallback(async () => {
+		if (!etherlinkProvider) return;
+		const web3 = new Web3(etherlinkProvider);
 		const accounts = await web3.eth.getAccounts();
 		const walletAddress = accounts.length > 0 ? accounts[0] : undefined;
 		setAddress(walletAddress);
 		return walletAddress;
-	}, [evmProvider]);
+	}, [etherlinkProvider]);
 
 	// Function to retrieve a Tezos wallet address (Beacon or WalletConnect)
 	const getAddress = useCallback(
@@ -140,9 +140,9 @@ export const useUnityCommunicator = (
 
 			try {
 				// Fetch the appropriate address based on the available provider
-				const data = evmProvider
+				const data = etherlinkProvider
 					? // If Etherlink provider is available, get the Ethereum address
-						await getAddressEvm()
+						await getAddressEtherlink()
 					: activeTezosProvider
 						? // Get the Tezos address
 							await getAddress(activeTezosProvider)
@@ -160,7 +160,7 @@ export const useUnityCommunicator = (
 			}
 		};
 	}, [openModal, getAddressEvm, getAddress, sendMessage,
-		evmProvider, tezosBeaconProvider, tezosWcProvider]);
+		etherlinkProvider, tezosBeaconProvider, tezosWcProvider]);
 
 	// Return the `setupUnityCommunication` function and the wallet address state
 	return {
