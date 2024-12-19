@@ -25,11 +25,11 @@ npm install @tconnect.io/modal
 ```
 {% endtab %}
 
-{% tab title="Evm Provider" %}
-Install the Evm Provider
+{% tab title="Etherlink Provider" %}
+Install the Etherlink Provider
 
 ```typescript
-npm install @tconnect.io/evm-provider
+npm install @tconnect.io/etherlink-provider
 ```
 {% endtab %}
 

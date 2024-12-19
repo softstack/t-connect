@@ -19,11 +19,11 @@ npm install @tconnect.io/modal
 This is a complete React component specifically crafted for blockchain wallet connections. It provides a ready-to-use interface that allows users to connect with supported wallets seamlessly. Once connected, it establishes a React context that enables developers to interact directly with blockchain functionalities. Think of it as a smart, pre-built gateway that simplifies the often complex process of wallet integration and blockchain interaction.
 {% endtab %}
 
-{% tab title="Evm Provider" %}
-Install the Evm Provider
+{% tab title="Etherlink Provider" %}
+Install the Etherlink Provider
 
 ```typescript
-npm install @tconnect.io/evm-provider
+npm install @tconnect.io/etherlink-provider
 ```
 
 This provider is exclusively designed for Etherlink, Tezos EVM-compatible sidechain.&#x20;
