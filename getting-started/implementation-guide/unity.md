@@ -233,5 +233,5 @@ export default App;
 By following these steps, Unity WebGL applications can be seamlessly embedded in React and integrated with the tconnect.io SDK. This enables smooth integration of Web3 features such as wallet connectivity into your Unity applications. Further customizations can be made based on the specific requirements of your application.
 
 {% hint style="info" %}
-you can find a demo bot here: [@tconnect\_unity\_bot](https://t.me/tconnect_unity_bot)
+You can try an demo in telegram via [@TheT2Earn](https://t.me/TheT2Earnbot)
 {% endhint %}
