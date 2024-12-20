@@ -4,7 +4,7 @@ icon: play
 
 # Unity
 
-## Integration of Unity WebGL with the tconnect.io sdk <a href="#integration-of-unity-webgl-with-the-tconnect.io-sdk" id="integration-of-unity-webgl-with-the-tconnect.io-sdk"></a>
+## Integration of Unity WebGL with the tconnect.io SDK <a href="#integration-of-unity-webgl-with-the-tconnect.io-sdk" id="integration-of-unity-webgl-with-the-tconnect.io-sdk"></a>
 
 This section of the documentation describes the integration of Unity WebGL applications with the tconnect.io SDK. The goal is to enable communication between a Unity WebGL application and a React application utilizing the tconnect.io SDK.
 
@@ -230,7 +230,7 @@ export default App;
 
 ### Conclusion <a href="#conclusion" id="conclusion"></a>
 
-By following these steps, Unity WebGL applications can be seamlessly embedded in React and integrated with the tconnect.io SDK. This enables smooth integration of Web3 features such as wallet connectivity into your Unity applications. Further customizations can be made based on the specific requirements of your application.
+By following these steps, Unity WebGL applications can be seamlessly embedded in React and integrated with the tconnect.io SDK. This enables smooth integration of Web3 features such as wallet connectivity into your Unity applications. Our demo application showcases more than just the two functionalities presented; it also supports **Get Signature**, **Transfer**, and **Show Balance**, offering a broader range of Web3 interactions to enhance the user experience. Further customizations can be made based on the specific requirements of your application.&#x20;
 
 {% hint style="info" %}
 You can try an demo in telegram via [@TheT2Earn](https://t.me/TheT2Earnbot)
